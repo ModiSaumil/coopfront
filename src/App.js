@@ -9,6 +9,9 @@ import Aboutus from "./aboutus";
 import Services from "./services";
 import News from "./news";
 import Contactus from "./contactus";
+import Adminhome from "./components/admin/adminhome";
+import Agenthome from "./components/agent/agenthome";
+import Driverhome from "./components/driver/driverhome";
 
 function App() {
   return (
@@ -17,13 +20,19 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage/>}></Route>
         <Route path="/simplogin" element={<Lrpage/>}></Route>
+        <Route path="/companyloginpage" element={<Companyloginpage/>}></Route>
+
+        <Route path="/forgotpasspage" element={<Forgotpasswordpage/>}></Route>
+
         <Route path="/aboutus" element={<Aboutus/>}></Route>
         <Route path="/services" element={<Services/>}></Route>
         <Route path="/news" element={<News/>}></Route>
         <Route path="/contactus" element={<Contactus/>}></Route>
-        <Route path="/companyloginpage" element={<Companyloginpage/>}></Route>
-        <Route path="/forgotpasspage" element={<Forgotpasswordpage/>}></Route>
+
+        <Route path="/adminhomepage" element={<Adminhome/>}></Route>
+        <Route path="/agenthomepage" element={<Agenthome/>}></Route>
         <Route path="/companyhomepage" element={<Companyhome/>}></Route>
+        <Route path="/driverhomepage" element={<Driverhome/>}></Route>
       </Routes>
       </BrowserRouter>
     </div>
